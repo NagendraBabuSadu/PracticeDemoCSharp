@@ -8,8 +8,26 @@ namespace PracticeDemoCSharp
 {
     class Program
     {
+        public void Show(params int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+
+        }
+
+
         static void Main(string[] args)
         {
+            Program p = new Program();
+            int[] nums = { 1, 2, 3, 4, 5 };
+            p.Show(nums);
+
+
+
+
+            /*
             int[][] jaggedArray = new int[2][];
             jaggedArray[0] = new int[] { 11, 12, 43, 23, 53, 56 };
             jaggedArray[1] = new int[] { 1, 2, 3, 4, 2, 2, 6, 7, 0 };
@@ -24,6 +42,12 @@ namespace PracticeDemoCSharp
             }
             Console.WriteLine();
             Console.WriteLine(jaggedArray[0][1]);
+            */
+
+
+
+
+
 
             Console.ReadLine();
 
