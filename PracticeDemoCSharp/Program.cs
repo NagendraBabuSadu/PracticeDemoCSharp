@@ -18,12 +18,21 @@ namespace PracticeDemoCSharp
         }
 
 
+        public void ShowObjects(params object[] a)
+        {
+            foreach (var item in a)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
         static void Main(string[] args)
         {
             Program p = new Program();
             int[] nums = { 1, 2, 3, 4, 5 };
-            p.Show(nums);
-
+            // p.Show(nums);
+             object[] ob = { "King", 123, 'a', 3.14 };
+            p.ShowObjects(ob);
 
 
 
