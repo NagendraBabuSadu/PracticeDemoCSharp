@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracticeDemoCSharp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,15 @@ namespace PracticeDemoCSharp
     {
         static void Main(string[] args)
         {
+            Program p = new Program();
+            int[] nums = { 1, 2, 3, 4, 5 };
+            // p.Show(nums);
+             object[] ob = { "King", 123, 'a', 3.14 };
+            p.ShowObjects(ob);
+
+
+
+            /*
             int[][] jaggedArray = new int[2][];
             jaggedArray[0] = new int[] { 11, 12, 43, 23, 53, 56 };
             jaggedArray[1] = new int[] { 1, 2, 3, 4, 2, 2, 6, 7, 0 };
